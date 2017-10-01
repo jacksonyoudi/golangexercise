@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -30,17 +31,14 @@ func main() {
 	// grow the slice beyond capacity
 	//slice1 = slice1[0:7 ] // panic: runtime error: slice bound out of range
 
-
-
 	var arr2 [4]int
-	for i,v := range arr2 {
+	for i, v := range arr2 {
 		fmt.Println(i, v)
 	}
 	sli := arr2[:]
 	sli[2] = 10
-	for i,v := range arr2 {
+	for i, v := range arr2 {
 		fmt.Println(i, v)
 	}
-
 
 }

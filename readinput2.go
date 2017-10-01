@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -36,4 +36,4 @@ ReadString 返回读取到的字符串，如果碰到错误则返回 nil。如�
 在上面的例子中，我们会读取键盘输入，直到回车键（\n）被按下。
 
 
- */
+*/

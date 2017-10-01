@@ -12,7 +12,7 @@ func main() {
 	pat := "[0-9]+.[0-9]+" //正则
 
 	f := func(s string) string {
-		v, _ := strconv.ParseFloat(s, 32) //字符转float
+		v, _ := strconv.ParseFloat(s, 32)           //字符转float
 		return strconv.FormatFloat(v*2, 'f', 2, 32) //float转str
 	}
 

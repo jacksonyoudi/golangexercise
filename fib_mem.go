@@ -21,7 +21,6 @@ func main() {
 	fmt.Printf("longCalculation took this amount of time: %s\n", delta)
 }
 
-
 func fibonacci(n int) (res uint64) {
 	// memoization: check if fibonacci(n) is already known in array:
 	if fibs[n] != 0 {

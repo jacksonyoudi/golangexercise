@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-
-
 type Stringer interface {
 	String() string
 }
@@ -12,12 +10,11 @@ type One struct {
 	one Interger
 }
 
-func (i *One) String()  {
+func (i *One) String() {
 	fmt.Println(i)
 }
 
-
-func main()  {
+func main() {
 	i := &One{1}
 	var v Stringer
 	v = i

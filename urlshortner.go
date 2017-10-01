@@ -7,6 +7,7 @@ import (
 
 	urlshortener "google-api-go-client.googlecode.com/hg/urlshortener/v1"
 )
+
 func main() {
 	http.HandleFunc("/", root)
 	http.HandleFunc("/short", short)
@@ -14,6 +15,7 @@ func main() {
 
 	http.ListenAndServe("localhost:8080", nil)
 }
+
 // the template used to show the forms and the results web page to the user
 var rootHtmlTmpl = template.Must(template.New("rootHtml").Parse(`
 <html><body>
@@ -30,14 +32,14 @@ Expand this: http://goo.gl/<input type="text" name="shortUrl" />
 </form>
 </body></html>
 `))
+
 func root(w http.ResponseWriter, r *http.Request) {
 	rootHtmlTmpl.Execute(w, nil)
 }
 func short(w http.ResponseWriter, r *http.Request) {
 	longUrl := r.FormValue("longUrl")
 	urlshortenerSvc, _ := urlshortener.New(http.DefaultClient)
-	url, _ := urlshortenerSvc.Url.Insert(&urlshortener.Url{LongUrl:
-	longUrl,}).Do()
+	url, _ := urlshortenerSvc.Url.Insert(&urlshortener.Url{LongUrl: longUrl}).Do()
 	rootHtmlTmpl.Execute(w, fmt.Sprintf("Shortened version of %s is : %s",
 		longUrl, url.Id))
 }

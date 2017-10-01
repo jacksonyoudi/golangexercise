@@ -3,13 +3,12 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"os"
 	"io"
+	"os"
 )
 
-
-func main()  {
-	inputFile,  err := os.Open("method.go")
+func main() {
+	inputFile, err := os.Open("method.go")
 	if err != nil {
 		fmt.Println("An error")
 		return

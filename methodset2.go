@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-type List []int  //slice
+type List []int //slice
 
 func (l List) Len() int {
 	return len(l)

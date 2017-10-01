@@ -10,7 +10,6 @@ func main() {
 	//	fmt.Print("\n")
 	//}
 
-
 	a := "abcdefg"
 	for index, value := range a {
 		fmt.Println(index)

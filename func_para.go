@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-    a()
+	a()
 	callback(1, Add)
 }
 
@@ -17,6 +17,6 @@ func callback(y int, f func(int, int)) {
 	f(y, 2) // this becomes Add(1, 2)
 }
 
-func a(){
-    fmt.Printfln("hello")
+func a() {
+	fmt.Printfln("hello")
 }
