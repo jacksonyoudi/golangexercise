@@ -37,3 +37,6 @@ func (i *In) Increase() {
 
 // method的访问权限是很高的
 //struct的访问权限是在包级别的访问控制
+//method value
+   
+//method Expression
