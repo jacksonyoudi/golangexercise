@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
-func main()  {
+func main() {
 	var a string = "abc"
 	b := strings.HasPrefix(a, "a")
 	c := strings.HasSuffix(a, "c")

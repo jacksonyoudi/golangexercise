@@ -30,7 +30,7 @@ func main() {
 	// or shorter
 	shapes := []Shaper{r, q}
 	fmt.Println("Looping through shapes for area ...")
-	for _,v := range shapes {
+	for _, v := range shapes {
 		fmt.Println("Shape details: ", v)
 		fmt.Println("Area of this shape is: ", v.Area())
 	}

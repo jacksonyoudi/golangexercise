@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-func Abs(x int) int  {
+func Abs(x int) int {
 	if x < 0 {
 		return -x
 	} else {
@@ -21,9 +21,6 @@ func isGreater(x, y int) bool {
 	}
 }
 
-
-
-
 func main() {
 	bool1 := true
 	if bool1 {
@@ -34,12 +31,7 @@ func main() {
 
 	fmt.Println(runtime.GOOS)
 
-
 	if var1 := 10; var1 > 1 {
 		fmt.Println("test")
 	}
 }
-
-
-
-

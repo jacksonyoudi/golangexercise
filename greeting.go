@@ -10,7 +10,7 @@ func main() {
 
 func greeting(a ...int) {
 	fmt.Println("hello,world!")
-	for i,v := range a {
-		fmt.Println(i,v)
+	for i, v := range a {
+		fmt.Println(i, v)
 	}
 }

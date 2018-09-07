@@ -17,17 +17,15 @@ func main() {
 	sl3 = append(sl3, 4, 5, 6)
 	fmt.Println(sl3)
 
-	sl4 := []int{1,2}
+	sl4 := []int{1, 2}
 	sl5 := sl4
 	fmt.Println(sl5)
-
 
 	s := "hello"
 	c := []byte(s)
 	c[0] = 'c'
 	s2 := string(c) // s2 == "cello"
 	fmt.Println(s2)
-
 
 	m := sort.Ints(sl_from)
 	m := sort.SearchInts(a, m)
